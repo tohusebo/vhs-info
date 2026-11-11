@@ -1,0 +1,93 @@
+{
+  "private_VHS_source_included": false,
+  "components": [
+    {
+      "component": "AetherEngine",
+      "version": "7.59.0",
+      "revision": "b6b3ff711bc78d89ccdb5d985cff5a90605232af",
+      "file": "AetherEngine-7.59.0-source.tar.xz",
+      "sha256": "6fcdbfdfc2ef3b995ac20d4cab7ce74ca76fd3d8807b9fd1e170117e3a030532",
+      "bytes": 5190596,
+      "source_files": 1465,
+      "prebuilt_frameworks_omitted": true,
+      "origin": "https://github.com/superuser404notfound/AetherEngine/tree/b6b3ff711bc78d89ccdb5d985cff5a90605232af"
+    },
+    {
+      "component": "FFmpegBuild",
+      "version": "3.13.0",
+      "revision": "9282e592b81d9aa1d699dcc70d46cf6b4d66b55f",
+      "file": "FFmpegBuild-3.13.0-source.tar.xz",
+      "sha256": "9f4f6f5e4199a528c2a6193dbf30db6ddc7f30ced3b5bf0a63bf76b893efae9e",
+      "bytes": 87720,
+      "source_files": 36,
+      "prebuilt_frameworks_omitted": true,
+      "origin": "https://github.com/superuser404notfound/FFmpegBuild/tree/9282e592b81d9aa1d699dcc70d46cf6b4d66b55f"
+    },
+    {
+      "component": "LibDovi",
+      "version": "2.1.0",
+      "revision": "0d7cce1d6836a30d13a3a2326e50a153af53f014",
+      "file": "LibDovi-2.1.0-source.tar.xz",
+      "sha256": "0e7db37efbdfbeb7e96bac00542ecb62581ae2072556193362db64d2a6afd732",
+      "bytes": 4548,
+      "source_files": 5,
+      "prebuilt_frameworks_omitted": true,
+      "origin": "https://github.com/superuser404notfound/LibDovi/tree/0d7cce1d6836a30d13a3a2326e50a153af53f014"
+    },
+    {
+      "component": "FFmpeg-8.1.3",
+      "revision": "1041abdc962f4cc4f394aa8de9dc5236c0c3b9e7",
+      "file": "FFmpeg-8.1.3-upstream-source.tar.gz",
+      "sha256": "a406fe831cbb605f5fe50e43eb566e502ae63ff3b3206bfa744e4b31b8bb73ac",
+      "bytes": 16920205,
+      "origin": "https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/1041abdc962f4cc4f394aa8de9dc5236c0c3b9e7",
+      "upstream_license_files": 5
+    },
+    {
+      "component": "dav1d-1.5.4",
+      "revision": "54706fc6bc0cdecab7e9593974a4039cc038fca7",
+      "file": "dav1d-1.5.4-upstream-source.tar.gz",
+      "sha256": "9edb11a2108b375cc58370354e705feebc93430bb780130363815c1e1ac0c250",
+      "bytes": 1751896,
+      "origin": "https://codeload.github.com/videolan/dav1d/tar.gz/54706fc6bc0cdecab7e9593974a4039cc038fca7",
+      "upstream_license_files": 1
+    },
+    {
+      "component": "zimg-3.0.6",
+      "revision": "f819b14e8f39d1282400b0d9543e8ef73c1b2bbd",
+      "file": "zimg-3.0.6-upstream-source.tar.gz",
+      "sha256": "4dc9faba466bce429226f0f5454cb7948ec2b70f6b5b6de383898227b38e51da",
+      "bytes": 326822,
+      "origin": "https://codeload.github.com/sekrit-twc/zimg/tar.gz/f819b14e8f39d1282400b0d9543e8ef73c1b2bbd",
+      "upstream_license_files": 1
+    },
+    {
+      "component": "libzvbi-0.2.46",
+      "revision": "34bb6f660c5c1bacd4a66cc7b22311e4ca3c1ab5",
+      "file": "libzvbi-0.2.46-upstream-source.tar.gz",
+      "sha256": "5c671a9f052e41cf770372a263ee6258cb41f6c97ce884080f68b341ab81db1a",
+      "bytes": 944273,
+      "origin": "https://codeload.github.com/zapping-vbi/zvbi/tar.gz/34bb6f660c5c1bacd4a66cc7b22311e4ca3c1ab5",
+      "upstream_license_files": 1
+    },
+    {
+      "component": "dolby_vision-3.4.0",
+      "revision": "libdovi-3.4.0",
+      "file": "dolby_vision-3.4.0-upstream-source.tar.gz",
+      "sha256": "8eac4d1c3134f53e8eb216db6450307a737425844113e480d1e9713c142a9fa2",
+      "bytes": 494710,
+      "origin": "https://codeload.github.com/quietvoid/dovi_tool/tar.gz/refs/tags/libdovi-3.4.0",
+      "upstream_license_files": 2
+    },
+    {
+      "component": "Legacy FFmpeg n8.1.2 and VHS bridge relocation objects",
+      "file": "VHS-FFmpeg-LGPL-RelinkKit-20261111.tar.xz",
+      "sha256": "146c3aa15769aca673074c40b01fc84639a52c04584742375128e3e9329d438a",
+      "bytes": 14606324,
+      "origin": "locally prepared from pinned vendor sources; private implementation source excluded",
+      "source_rebuild_test": "all six architectures relinked from existing library objects in prior pass; fresh source compile not performed"
+    }
+  ],
+  "full_fresh_source_rebuild_performed": false,
+  "published": false
+}

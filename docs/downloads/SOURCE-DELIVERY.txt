@@ -1,0 +1,30 @@
+VHS — third-party source and relinking materials
+Prepared 11 November 2026. These files are staged locally; they are not yet published.
+
+Scope
+The private VHS application Swift code and private bridge implementation source are excluded. The source files here belong to their respective third-party authors and retain their original licenses. The legacy relink kit includes first-party bridge relocation objects and the public header under its express relinking permission. The proprietary app notice does not restrict the library replacement/debugging rights described in those licenses.
+
+Exact package sources
+AetherEngine 7.59.0: b6b3ff711bc78d89ccdb5d985cff5a90605232af.
+FFmpegBuild 3.13.0: 9282e592b81d9aa1d699dcc70d46cf6b4d66b55f.
+LibDovi 2.1.0: 0d7cce1d6836a30d13a3a2326e50a153af53f014.
+Their source archives contain the tracked source, documentation, notices and recipes; prebuilt framework/static-library products and Git metadata have been omitted. The delivered file contents are unchanged. Check SHA256SUMS.txt and manifest.json.
+
+FFmpegBuild inputs
+The included original BUILD-INFO.txt and build.sh record FFmpeg n8.1.3 at 1041abdc962f4cc4f394aa8de9dc5236c0c3b9e7, dav1d 1.5.4 at 54706fc6bc0cdecab7e9593974a4039cc038fca7, zimg 3.0.6 at f819b14e8f39d1282400b0d9543e8ef73c1b2bbd, and libzvbi 0.2.46 at 34bb6f660c5c1bacd4a66cc7b22311e4ca3c1ab5. These upstream source trees are included separately. The FFmpeg/libzvbi modifications are in build.sh and patches/. Reapplying these source changes matched the recorded source-change digests exactly. This was a source-diff verification, not a fresh compilation.
+FFmpegBuild's original script bootstraps the listed tagged repositories with Git. You may use its documented network fetches, or check out the included identical sources with the expected version tags. Merely extracting a tar archive into build/*-src does not supply the Git tag metadata its stale-source check expects; it will re-clone. The source archives are supplied for access/modification regardless of the convenience fetch mechanism. The script needs Xcode command-line tools, make, nasm as applicable, meson, ninja, pkg-config, autoconf, automake, GNU libtool, gettext and Perl. Follow the pinned README and build.sh rather than mixing flags from another release. Some build prerequisites are not installed on the preparation host.
+Run ./build.sh from the extracted FFmpegBuild package to produce its dynamic xcframeworks. Preserve framework names, exported ABI, @rpath identities and privacy manifests. Upstream libzvbi also contains GPL source files that the supplied build explicitly excludes and replaces with LGPL stubs; do not enable those files in a proprietary application build without reviewing the resulting license obligations.
+
+Legacy iOS/tvOS bridge
+Extract VHS-FFmpeg-LGPL-RelinkKit-20261111.tar.xz and follow its README.txt. Its exact n8.1.2 source is bundled inside. Tools/rebuild-library.py builds the libraries and links the supplied bridge objects for six target architectures. Preserve BWGFFmpeg.framework/BWGFFmpeg and its public BWGFF interface. App binaries in a developer's installation are never overwritten by that script. Earlier verification relinked all six architectures using matching existing FFmpeg library objects; a fresh full source rebuild of every architecture has not been performed.
+
+AetherEngine and LibDovi
+AetherEngine's original license includes an additional Apple Store/TestFlight distribution permission, reproduced verbatim in its archive and Aether-Notices.txt. Its dependency source/build terms remain separate.
+LibDovi 2.1.0's build.sh packages dolby_vision 3.4.0 from the separately supplied dovi_tool source. Follow its Cargo/cargo-c instructions; Cargo may fetch the upstream Rust dependencies recorded by that project. The library is used under the MIT option. Do not confuse this with a patent grant for a media format.
+
+Library replacement and signing
+A rebuilt compatible dynamic framework can be placed into a copy of a legitimately obtained app, with required signing performed using Apple's tools and the recipient's own valid signing/development setup. iOS/tvOS and Mac App Store installations have platform restrictions; do not bypass DRM, certificate checks or device protections. The Aether permission applies to Aether, not to unrelated rights. Availability of source files and a build recipe alone is not an Apple review approval or a legal guarantee about every distribution restriction.
+
+Contact
+Tommy Husebø, Norway — zerocool_angela@protonmail.com.
+The proposed delivery location is https://tohusebo.github.io/vhs-info/licenses.html. The files must actually be made available to recipients, and the live links verified, before external distribution. Keep the versioned source files available for the period required by their licenses and maintain correspondence with the distributed app versions.

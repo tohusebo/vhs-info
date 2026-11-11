@@ -1,0 +1,9 @@
+6fcdbfdfc2ef3b995ac20d4cab7ce74ca76fd3d8807b9fd1e170117e3a030532  AetherEngine-7.59.0-source.tar.xz
+9f4f6f5e4199a528c2a6193dbf30db6ddc7f30ced3b5bf0a63bf76b893efae9e  FFmpegBuild-3.13.0-source.tar.xz
+0e7db37efbdfbeb7e96bac00542ecb62581ae2072556193362db64d2a6afd732  LibDovi-2.1.0-source.tar.xz
+a406fe831cbb605f5fe50e43eb566e502ae63ff3b3206bfa744e4b31b8bb73ac  FFmpeg-8.1.3-upstream-source.tar.gz
+9edb11a2108b375cc58370354e705feebc93430bb780130363815c1e1ac0c250  dav1d-1.5.4-upstream-source.tar.gz
+4dc9faba466bce429226f0f5454cb7948ec2b70f6b5b6de383898227b38e51da  zimg-3.0.6-upstream-source.tar.gz
+5c671a9f052e41cf770372a263ee6258cb41f6c97ce884080f68b341ab81db1a  libzvbi-0.2.46-upstream-source.tar.gz
+8eac4d1c3134f53e8eb216db6450307a737425844113e480d1e9713c142a9fa2  dolby_vision-3.4.0-upstream-source.tar.gz
+146c3aa15769aca673074c40b01fc84639a52c04584742375128e3e9329d438a  VHS-FFmpeg-LGPL-RelinkKit-20261111.tar.xz
